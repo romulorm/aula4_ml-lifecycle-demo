@@ -1,12 +1,12 @@
 {
   "versao": "v1.0",
-  "data_deploy": "2025-12-01",
+  "data_deploy": "2025-12-02",
   "data_treino": "outubro_2025",
-  "algoritmo": "XGBoost (n=300, lr=0.1)",
-  "f1_score": 1.0,
+  "algoritmo": "GradientBoosting (n=300, lr=0.1)",
+  "f1_score": 0.9565217391304348,
   "precision": 1.0,
-  "recall": 1.0,
-  "run_id": "da9275cc5ad74d2d8c69b9bacad62dea",
+  "recall": 0.9166666666666666,
+  "run_id": "7b618c6da63c4915980ce858f7677a4f",
   "n_transacoes_treino": 2000,
   "taxa_fraude_treino": 0.1
 }

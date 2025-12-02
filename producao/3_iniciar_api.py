@@ -48,7 +48,7 @@ print(f"\n✅ Modelo carregado com sucesso!")
 
 # Schemas
 class TransacaoInput(BaseModel):
-    valor: float = Field(..., ge=0, description="Valor da transação em R$")
+    valor: float = Field(..., gt=0, description="Valor da transação em R$")
     hora: int = Field(..., ge=0, le=23, description="Hora da transação (0-23)")
     categoria: Literal[
         "alimentacao", "farmacia", "transporte", "vestuario", "restaurante",
@@ -124,6 +124,6 @@ def predict(transacao: TransacaoInput):
 
 if __name__ == "__main__":
     import uvicorn
-    print("\nINFO:     Uvicorn running on http://localhost:8000")
-    print("INFO:     Docs: http://localhost:8000/docs\n")
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    print("\nINFO:     Uvicorn running on http://localhost:8001")
+    print("INFO:     Docs: http://localhost:8001/docs\n")
+    uvicorn.run(app, host="0.0.0.0", port=8001)
